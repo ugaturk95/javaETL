@@ -75,7 +75,6 @@ body:
     attributes:
       label: Add a description
       description: Add your description here...
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -83,7 +82,6 @@ body:
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: markdown
   - type: checkboxes
     id: terms
     attributes:
