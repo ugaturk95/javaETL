@@ -51,7 +51,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: ecrnow_version
     attributes:
       label: eCR Now Version
       description: What version of the eCR Now FHIR App are you running?
@@ -66,12 +66,12 @@ body:
     id: esrd_version
     attributes:
       label: eSRD Version
-      description: What version of eSRD are you running?
+      description: If the issue is eSRD related, please copy and paste the first 30 lines of eSRD are you running.
       placeholder: 
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: issue-description
     attributes:
       label: Add a description
       description: Add your description here...
