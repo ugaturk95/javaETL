@@ -1,6 +1,5 @@
 name: eCR Now FHIR App Issues Report
 description: File an eCR Now Issue report
-title: "Title"
 labels: ["bug", "triage"]
 projects: ["ugaturk95-patch-1", "ugaturk95-patch-2"]
 assignees:
