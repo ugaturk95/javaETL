@@ -1,5 +1,5 @@
-name: Bug Report
-description: File a bug report
+name: eCR Now FHIR App Issues Report
+description: File an eCR Now Issue report
 title: "Title"
 labels: ["bug", "triage"]
 projects: ["ugaturk95-patch-1", "ugaturk95-patch-2"]
@@ -75,7 +75,7 @@ body:
     attributes:
       label: Add a description
       description: Add your description here...
-      render: shell
+      render: markdown
     validations:
       required: true
   - type: textarea
@@ -83,7 +83,7 @@ body:
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      render: markdown
   - type: checkboxes
     id: terms
     attributes:
