@@ -1,8 +1,82 @@
-blank_issues_enabled: false
-contact_links:
-  - name: GitHub Community Support
-    url: https://github.com/orgs/community/discussions
-    about: Please ask and answer questions here.
-  - name: GitHub Security Bug Bounty
-    url: https://bounty.github.com/
-    about: Please report security vulnerabilities here.
+name: eCR Now FHIR App Issues Report
+description: File an eCR Now Issue report
+labels: ["bug", "triage"]
+projects: ["perlAutomation"]
+assignees:
+  - ugaturk95
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this issue report!
+  - type: input
+    id: reporter
+    attributes:
+      label: Reporter Name
+      description: Reporter first and last name
+      placeholder: 
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Reporter Email
+      description: How can we get in touch with you via email if we need more info?
+    validations:
+      required: false
+  - type: dropdown
+    id: ehrname
+    attributes:
+      label: EHR Name
+      description: What EHR are you using?
+      options:
+        - Altera - Paragon
+        - athenaHealth - athenaHHS & athenaClinicals
+        - athenaHealth - athenaPractice
+        - Evident - Centriq
+        - Flatiron - OncoEMR
+        - Greenway
+        - McKesson
+        - ModernizingMedicine - EMA
+        - NextGen - Enterprise
+        - Oracle Health - Ambulatory
+        - Oracle Health - Cerner Millennium
+        - Oracle Health - Community Works
+        - Premier Inc. - Theradoc
+        - Veradigm - Veradigm EHR
+        - Other
+      default: 14
+    validations:
+      required: true
+  - type: dropdown
+    id: ecrnow_version
+    attributes:
+      label: eCR Now Version
+      description: What version of the eCR Now FHIR App are you running?
+      options:
+        - v3.1.1 (Default)
+        - v3.1.2 (Beta)
+        - v2.0.0
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Add a description
+      description: Add your description here...
+    validations:
+      required: true
+  - type: textarea
+    id: logs_ersd_version
+    attributes:
+      label: Relevant log output / eRSD Version
+      description: Please copy and paste any relevant log output. If the issue is eRSD related, please copy and paste the first 30 lines of the eRSD file you are running.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow the APHL [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
