@@ -72,7 +72,12 @@ body:
     id: logs_ersd_version
     attributes:
       label: Relevant log output / eRSD Version
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks. If the issue is eRSD related, please copy and paste the first 30 lines of the eRSD file you are running.
+      description: Please copy and paste any relevant text.
+  - type: markdown
+    attributes:
+      value: Please copy and paste any relevant log output. 
+        This will be automatically formatted into code, so no need for backticks.
+        If the issue is eRSD related, please copy and paste the first 30 lines of the eRSD file you are running.
   - type: checkboxes
     id: terms
     attributes:
