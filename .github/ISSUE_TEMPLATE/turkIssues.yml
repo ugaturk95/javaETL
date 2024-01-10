@@ -1,7 +1,7 @@
 name: eCR Now FHIR App Issues Report
 description: File an eCR Now Issue report
 labels: ["bug", "triage"]
-projects: ["ugaturk95-patch-1", "ugaturk95-patch-2"]
+projects: ["perlAutomation"]
 assignees:
   - ugaturk95
 body:
@@ -69,18 +69,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: logs_ersd_version
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-  - type: textarea
-    id: esrd_version
-    attributes:
-      label: eSRD Version
-      description: If the issue is eSRD related, please copy and paste the first 30 lines of eSRD are you running.
-      placeholder: 
-    validations:
-      required: false
+      label: Relevant log output / eRSD Version
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks. If the issue is eRSD related, please copy and paste the first 30 lines of the eRSD file you are running.
   - type: checkboxes
     id: terms
     attributes:
